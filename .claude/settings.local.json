@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cargo test:*)",
+      "Bash(cargo check:*)",
+      "Bash(rustc:*)",
+      "Bash(./test_borrow_fix.exe)",
+      "Bash(rm:*)",
+      "Bash(grep:*)",
+      "Bash(cargo:*)",
+      "Bash(find:*)",
+      "Bash(targetreleasecsharp_compiler.exe lex examples/hello.cs)",
+      "Bash(.targetreleasecsharp_compiler.exe lex examples/hello.cs)",
+      "Bash(.targetreleasecsharp_compiler.exe lex exampleshello.cs)",
+      "Bash(targetreleasecsharp_compiler.exe lex exampleshello.cs)",
+      "Bash(cmd /c:*)",
+      "Bash(powershell:*)"
+    ],
+    "deny": []
+  }
+}

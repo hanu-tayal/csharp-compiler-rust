@@ -1,0 +1,1682 @@
+    Checking csharp_compiler v0.1.0 (C:\Users\hanut\rust-csharp-compiler)
+warning: unused import: `SyntaxKind`
+ --> src\lexer\mod.rs:9:21
+  |
+9 | use crate::syntax::{SyntaxKind, SyntaxToken};
+  |                     ^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+warning: unused import: `DiagnosticCode`
+ --> src\parser\mod.rs:7:41
+  |
+7 | use crate::diagnostics::{DiagnosticBag, DiagnosticCode};
+  |                                         ^^^^^^^^^^^^^^
+
+warning: unused import: `self::expressions::ExpressionParser`
+  --> src\parser\mod.rs:16:5
+   |
+16 | use self::expressions::ExpressionParser;
+   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `self::statements::StatementParser`
+  --> src\parser\mod.rs:17:5
+   |
+17 | use self::statements::StatementParser;
+   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `self::types::TypeParser`
+  --> src\parser\mod.rs:19:5
+   |
+19 | use self::types::TypeParser;
+   |     ^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused imports: `DiagnosticCode` and `Diagnostic`
+ --> src\semantic\mod.rs:6:41
+  |
+6 | use crate::diagnostics::{DiagnosticBag, Diagnostic, DiagnosticCode};
+  |                                         ^^^^^^^^^^  ^^^^^^^^^^^^^^
+
+warning: unused import: `Assembly`
+ --> src\semantic\mod.rs:7:46
+  |
+7 | use crate::assembly_loader::{AssemblyLoader, Assembly};
+  |                                              ^^^^^^^^
+
+warning: unused import: `indexmap::IndexMap`
+ --> src\semantic\mod.rs:9:5
+  |
+9 | use indexmap::IndexMap;
+  |     ^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `indexmap::IndexMap`
+ --> src\semantic\symbols.rs:4:5
+  |
+4 | use indexmap::IndexMap;
+  |     ^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `SymbolKind`
+ --> src\semantic\binding.rs:5:43
+  |
+5 | use super::symbols::{SymbolTable, Symbol, SymbolKind};
+  |                                           ^^^^^^^^^^
+
+warning: unused import: `TypeReference`
+ --> src\semantic\type_checker.rs:6:40
+  |
+6 | use super::generics::{GenericResolver, TypeReference};
+  |                                        ^^^^^^^^^^^^^
+
+warning: unused import: `ParameterSymbol`
+ --> src\semantic\overload_resolution.rs:4:36
+  |
+4 | use super::symbols::{MethodSymbol, ParameterSymbol};
+  |                                    ^^^^^^^^^^^^^^^
+
+warning: unused imports: `SymbolKind` and `Symbol`
+ --> src\semantic\generics.rs:4:22
+  |
+4 | use super::symbols::{Symbol, SymbolKind};
+  |                      ^^^^^^  ^^^^^^^^^^
+
+warning: unused imports: `SyntaxKind` and `SyntaxNode`
+ --> src\semantic\generics.rs:5:21
+  |
+5 | use crate::syntax::{SyntaxNode, SyntaxKind};
+  |                     ^^^^^^^^^^  ^^^^^^^^^^
+
+warning: unused import: `self::type_checker::TypeChecker`
+  --> src\semantic\mod.rs:22:5
+   |
+22 | use self::type_checker::TypeChecker;
+   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `miette::SourceCode`
+ --> src\diagnostics\mod.rs:7:5
+  |
+7 | use miette::SourceCode;
+  |     ^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `std::fs::File`
+ --> src\assembly_loader.rs:4:5
+  |
+4 | use std::fs::File;
+  |     ^^^^^^^^^^^^^
+
+warning: unused imports: `Read`, `SeekFrom`, and `Seek`
+ --> src\assembly_loader.rs:5:15
+  |
+5 | use std::io::{Read, Seek, SeekFrom};
+  |               ^^^^  ^^^^  ^^^^^^^^
+
+warning: unused import: `std::rc::Rc`
+  --> src\codegen\mod.rs:11:5
+   |
+11 | use std::rc::Rc;
+   |     ^^^^^^^^^^^
+
+warning: unused import: `std::io::Write`
+ --> src\codegen\emitter.rs:5:5
+  |
+5 | use std::io::Write;
+  |     ^^^^^^^^^^^^^^
+
+warning: variant `Ldc_i4_m1` should have an upper camel case name
+  --> src\codegen\il.rs:15:5
+   |
+15 |     Ldc_i4_m1,
+   |     ^^^^^^^^^ help: convert the identifier to upper camel case: `LdcI4M1`
+   |
+   = note: `#[warn(non_camel_case_types)]` on by default
+
+warning: variant `Ldc_i4_0` should have an upper camel case name
+  --> src\codegen\il.rs:16:5
+   |
+16 |     Ldc_i4_0,
+   |     ^^^^^^^^ help: convert the identifier to upper camel case: `LdcI4_0`
+
+warning: variant `Ldc_i4_1` should have an upper camel case name
+  --> src\codegen\il.rs:17:5
+   |
+17 |     Ldc_i4_1,
+   |     ^^^^^^^^ help: convert the identifier to upper camel case: `LdcI4_1`
+
+warning: variant `Ldc_i4_2` should have an upper camel case name
+  --> src\codegen\il.rs:18:5
+   |
+18 |     Ldc_i4_2,
+   |     ^^^^^^^^ help: convert the identifier to upper camel case: `LdcI4_2`
+
+warning: variant `Ldc_i4_3` should have an upper camel case name
+  --> src\codegen\il.rs:19:5
+   |
+19 |     Ldc_i4_3,
+   |     ^^^^^^^^ help: convert the identifier to upper camel case: `LdcI4_3`
+
+warning: variant `Ldc_i4_4` should have an upper camel case name
+  --> src\codegen\il.rs:20:5
+   |
+20 |     Ldc_i4_4,
+   |     ^^^^^^^^ help: convert the identifier to upper camel case: `LdcI4_4`
+
+warning: variant `Ldc_i4_5` should have an upper camel case name
+  --> src\codegen\il.rs:21:5
+   |
+21 |     Ldc_i4_5,
+   |     ^^^^^^^^ help: convert the identifier to upper camel case: `LdcI4_5`
+
+warning: variant `Ldc_i4_6` should have an upper camel case name
+  --> src\codegen\il.rs:22:5
+   |
+22 |     Ldc_i4_6,
+   |     ^^^^^^^^ help: convert the identifier to upper camel case: `LdcI4_6`
+
+warning: variant `Ldc_i4_7` should have an upper camel case name
+  --> src\codegen\il.rs:23:5
+   |
+23 |     Ldc_i4_7,
+   |     ^^^^^^^^ help: convert the identifier to upper camel case: `LdcI4_7`
+
+warning: variant `Ldc_i4_8` should have an upper camel case name
+  --> src\codegen\il.rs:24:5
+   |
+24 |     Ldc_i4_8,
+   |     ^^^^^^^^ help: convert the identifier to upper camel case: `LdcI4_8`
+
+warning: variant `Ldc_i4_s` should have an upper camel case name
+  --> src\codegen\il.rs:25:5
+   |
+25 |     Ldc_i4_s(i8),
+   |     ^^^^^^^^ help: convert the identifier to upper camel case: `LdcI4S`
+
+warning: variant `Ldc_i4` should have an upper camel case name
+  --> src\codegen\il.rs:26:5
+   |
+26 |     Ldc_i4(i32),
+   |     ^^^^^^ help: convert the identifier to upper camel case: `LdcI4`
+
+warning: variant `Ldc_i8` should have an upper camel case name
+  --> src\codegen\il.rs:27:5
+   |
+27 |     Ldc_i8(i64),
+   |     ^^^^^^ help: convert the identifier to upper camel case: `LdcI8`
+
+warning: variant `Ldc_r4` should have an upper camel case name
+  --> src\codegen\il.rs:28:5
+   |
+28 |     Ldc_r4(f32),
+   |     ^^^^^^ help: convert the identifier to upper camel case: `LdcR4`
+
+warning: variant `Ldc_r8` should have an upper camel case name
+  --> src\codegen\il.rs:29:5
+   |
+29 |     Ldc_r8(f64),
+   |     ^^^^^^ help: convert the identifier to upper camel case: `LdcR8`
+
+warning: variant `Ldloc_0` should have an upper camel case name
+  --> src\codegen\il.rs:33:5
+   |
+33 |     Ldloc_0,
+   |     ^^^^^^^ help: convert the identifier to upper camel case: `Ldloc0`
+
+warning: variant `Ldloc_1` should have an upper camel case name
+  --> src\codegen\il.rs:34:5
+   |
+34 |     Ldloc_1,
+   |     ^^^^^^^ help: convert the identifier to upper camel case: `Ldloc1`
+
+warning: variant `Ldloc_2` should have an upper camel case name
+  --> src\codegen\il.rs:35:5
+   |
+35 |     Ldloc_2,
+   |     ^^^^^^^ help: convert the identifier to upper camel case: `Ldloc2`
+
+warning: variant `Ldloc_3` should have an upper camel case name
+  --> src\codegen\il.rs:36:5
+   |
+36 |     Ldloc_3,
+   |     ^^^^^^^ help: convert the identifier to upper camel case: `Ldloc3`
+
+warning: variant `Stloc_0` should have an upper camel case name
+  --> src\codegen\il.rs:39:5
+   |
+39 |     Stloc_0,
+   |     ^^^^^^^ help: convert the identifier to upper camel case: `Stloc0`
+
+warning: variant `Stloc_1` should have an upper camel case name
+  --> src\codegen\il.rs:40:5
+   |
+40 |     Stloc_1,
+   |     ^^^^^^^ help: convert the identifier to upper camel case: `Stloc1`
+
+warning: variant `Stloc_2` should have an upper camel case name
+  --> src\codegen\il.rs:41:5
+   |
+41 |     Stloc_2,
+   |     ^^^^^^^ help: convert the identifier to upper camel case: `Stloc2`
+
+warning: variant `Stloc_3` should have an upper camel case name
+  --> src\codegen\il.rs:42:5
+   |
+42 |     Stloc_3,
+   |     ^^^^^^^ help: convert the identifier to upper camel case: `Stloc3`
+
+warning: variant `Ldarg_0` should have an upper camel case name
+  --> src\codegen\il.rs:46:5
+   |
+46 |     Ldarg_0,
+   |     ^^^^^^^ help: convert the identifier to upper camel case: `Ldarg0`
+
+warning: variant `Ldarg_1` should have an upper camel case name
+  --> src\codegen\il.rs:47:5
+   |
+47 |     Ldarg_1,
+   |     ^^^^^^^ help: convert the identifier to upper camel case: `Ldarg1`
+
+warning: variant `Ldarg_2` should have an upper camel case name
+  --> src\codegen\il.rs:48:5
+   |
+48 |     Ldarg_2,
+   |     ^^^^^^^ help: convert the identifier to upper camel case: `Ldarg2`
+
+warning: variant `Ldarg_3` should have an upper camel case name
+  --> src\codegen\il.rs:49:5
+   |
+49 |     Ldarg_3,
+   |     ^^^^^^^ help: convert the identifier to upper camel case: `Ldarg3`
+
+warning: variant `Div_un` should have an upper camel case name
+  --> src\codegen\il.rs:59:5
+   |
+59 |     Div_un,
+   |     ^^^^^^ help: convert the identifier to upper camel case: `DivUn`
+
+warning: variant `Rem_un` should have an upper camel case name
+  --> src\codegen\il.rs:61:5
+   |
+61 |     Rem_un,
+   |     ^^^^^^ help: convert the identifier to upper camel case: `RemUn`
+
+warning: variant `Shr_un` should have an upper camel case name
+  --> src\codegen\il.rs:71:5
+   |
+71 |     Shr_un,
+   |     ^^^^^^ help: convert the identifier to upper camel case: `ShrUn`
+
+warning: variant `Cgt_un` should have an upper camel case name
+  --> src\codegen\il.rs:76:5
+   |
+76 |     Cgt_un,
+   |     ^^^^^^ help: convert the identifier to upper camel case: `CgtUn`
+
+warning: variant `Clt_un` should have an upper camel case name
+  --> src\codegen\il.rs:78:5
+   |
+78 |     Clt_un,
+   |     ^^^^^^ help: convert the identifier to upper camel case: `CltUn`
+
+warning: variant `Bne_un` should have an upper camel case name
+  --> src\codegen\il.rs:89:5
+   |
+89 |     Bne_un(u32),
+   |     ^^^^^^ help: convert the identifier to upper camel case: `BneUn`
+
+warning: variant `Bge_un` should have an upper camel case name
+  --> src\codegen\il.rs:90:5
+   |
+90 |     Bge_un(u32),
+   |     ^^^^^^ help: convert the identifier to upper camel case: `BgeUn`
+
+warning: variant `Bgt_un` should have an upper camel case name
+  --> src\codegen\il.rs:91:5
+   |
+91 |     Bgt_un(u32),
+   |     ^^^^^^ help: convert the identifier to upper camel case: `BgtUn`
+
+warning: variant `Ble_un` should have an upper camel case name
+  --> src\codegen\il.rs:92:5
+   |
+92 |     Ble_un(u32),
+   |     ^^^^^^ help: convert the identifier to upper camel case: `BleUn`
+
+warning: variant `Blt_un` should have an upper camel case name
+  --> src\codegen\il.rs:93:5
+   |
+93 |     Blt_un(u32),
+   |     ^^^^^^ help: convert the identifier to upper camel case: `BltUn`
+
+warning: variant `Ldelem_i1` should have an upper camel case name
+   --> src\codegen\il.rs:105:5
+    |
+105 |     Ldelem_i1,
+    |     ^^^^^^^^^ help: convert the identifier to upper camel case: `LdelemI1`
+
+warning: variant `Ldelem_i2` should have an upper camel case name
+   --> src\codegen\il.rs:106:5
+    |
+106 |     Ldelem_i2,
+    |     ^^^^^^^^^ help: convert the identifier to upper camel case: `LdelemI2`
+
+warning: variant `Ldelem_i4` should have an upper camel case name
+   --> src\codegen\il.rs:107:5
+    |
+107 |     Ldelem_i4,
+    |     ^^^^^^^^^ help: convert the identifier to upper camel case: `LdelemI4`
+
+warning: variant `Ldelem_i8` should have an upper camel case name
+   --> src\codegen\il.rs:108:5
+    |
+108 |     Ldelem_i8,
+    |     ^^^^^^^^^ help: convert the identifier to upper camel case: `LdelemI8`
+
+warning: variant `Ldelem_r4` should have an upper camel case name
+   --> src\codegen\il.rs:109:5
+    |
+109 |     Ldelem_r4,
+    |     ^^^^^^^^^ help: convert the identifier to upper camel case: `LdelemR4`
+
+warning: variant `Ldelem_r8` should have an upper camel case name
+   --> src\codegen\il.rs:110:5
+    |
+110 |     Ldelem_r8,
+    |     ^^^^^^^^^ help: convert the identifier to upper camel case: `LdelemR8`
+
+warning: variant `Ldelem_ref` should have an upper camel case name
+   --> src\codegen\il.rs:111:5
+    |
+111 |     Ldelem_ref,
+    |     ^^^^^^^^^^ help: convert the identifier to upper camel case: `LdelemRef`
+
+warning: variant `Stelem_i1` should have an upper camel case name
+   --> src\codegen\il.rs:112:5
+    |
+112 |     Stelem_i1,
+    |     ^^^^^^^^^ help: convert the identifier to upper camel case: `StelemI1`
+
+warning: variant `Stelem_i2` should have an upper camel case name
+   --> src\codegen\il.rs:113:5
+    |
+113 |     Stelem_i2,
+    |     ^^^^^^^^^ help: convert the identifier to upper camel case: `StelemI2`
+
+warning: variant `Stelem_i4` should have an upper camel case name
+   --> src\codegen\il.rs:114:5
+    |
+114 |     Stelem_i4,
+    |     ^^^^^^^^^ help: convert the identifier to upper camel case: `StelemI4`
+
+warning: variant `Stelem_i8` should have an upper camel case name
+   --> src\codegen\il.rs:115:5
+    |
+115 |     Stelem_i8,
+    |     ^^^^^^^^^ help: convert the identifier to upper camel case: `StelemI8`
+
+warning: variant `Stelem_r4` should have an upper camel case name
+   --> src\codegen\il.rs:116:5
+    |
+116 |     Stelem_r4,
+    |     ^^^^^^^^^ help: convert the identifier to upper camel case: `StelemR4`
+
+warning: variant `Stelem_r8` should have an upper camel case name
+   --> src\codegen\il.rs:117:5
+    |
+117 |     Stelem_r8,
+    |     ^^^^^^^^^ help: convert the identifier to upper camel case: `StelemR8`
+
+warning: variant `Stelem_ref` should have an upper camel case name
+   --> src\codegen\il.rs:118:5
+    |
+118 |     Stelem_ref,
+    |     ^^^^^^^^^^ help: convert the identifier to upper camel case: `StelemRef`
+
+warning: variant `Conv_i1` should have an upper camel case name
+   --> src\codegen\il.rs:129:5
+    |
+129 |     Conv_i1,
+    |     ^^^^^^^ help: convert the identifier to upper camel case: `ConvI1`
+
+warning: variant `Conv_i2` should have an upper camel case name
+   --> src\codegen\il.rs:130:5
+    |
+130 |     Conv_i2,
+    |     ^^^^^^^ help: convert the identifier to upper camel case: `ConvI2`
+
+warning: variant `Conv_i4` should have an upper camel case name
+   --> src\codegen\il.rs:131:5
+    |
+131 |     Conv_i4,
+    |     ^^^^^^^ help: convert the identifier to upper camel case: `ConvI4`
+
+warning: variant `Conv_i8` should have an upper camel case name
+   --> src\codegen\il.rs:132:5
+    |
+132 |     Conv_i8,
+    |     ^^^^^^^ help: convert the identifier to upper camel case: `ConvI8`
+
+warning: variant `Conv_r4` should have an upper camel case name
+   --> src\codegen\il.rs:133:5
+    |
+133 |     Conv_r4,
+    |     ^^^^^^^ help: convert the identifier to upper camel case: `ConvR4`
+
+warning: variant `Conv_r8` should have an upper camel case name
+   --> src\codegen\il.rs:134:5
+    |
+134 |     Conv_r8,
+    |     ^^^^^^^ help: convert the identifier to upper camel case: `ConvR8`
+
+warning: variant `Conv_u1` should have an upper camel case name
+   --> src\codegen\il.rs:135:5
+    |
+135 |     Conv_u1,
+    |     ^^^^^^^ help: convert the identifier to upper camel case: `ConvU1`
+
+warning: variant `Conv_u2` should have an upper camel case name
+   --> src\codegen\il.rs:136:5
+    |
+136 |     Conv_u2,
+    |     ^^^^^^^ help: convert the identifier to upper camel case: `ConvU2`
+
+warning: variant `Conv_u4` should have an upper camel case name
+   --> src\codegen\il.rs:137:5
+    |
+137 |     Conv_u4,
+    |     ^^^^^^^ help: convert the identifier to upper camel case: `ConvU4`
+
+warning: variant `Conv_u8` should have an upper camel case name
+   --> src\codegen\il.rs:138:5
+    |
+138 |     Conv_u8,
+    |     ^^^^^^^ help: convert the identifier to upper camel case: `ConvU8`
+
+warning: variant `Unbox_any` should have an upper camel case name
+   --> src\codegen\il.rs:151:5
+    |
+151 |     Unbox_any(String),
+    |     ^^^^^^^^^ help: convert the identifier to upper camel case: `UnboxAny`
+
+warning: unused imports: `ILInstruction`, `ILMethod`, and `get_opcode`
+ --> src\codegen\pe.rs:3:29
+  |
+3 | use super::il::{ILAssembly, ILMethod, ILInstruction, get_opcode};
+  |                             ^^^^^^^^  ^^^^^^^^^^^^^  ^^^^^^^^^^
+
+warning: unused import: `std::collections::HashMap`
+ --> src\codegen\pe.rs:5:5
+  |
+5 | use std::collections::HashMap;
+  |     ^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `std::io::Write`
+ --> src\codegen\pe.rs:6:5
+  |
+6 | use std::io::Write;
+  |     ^^^^^^^^^^^^^^
+
+warning: unused import: `std::io::Write`
+  --> src\compiler.rs:17:5
+   |
+17 | use std::io::Write;
+   |     ^^^^^^^^^^^^^^
+
+error[E0369]: binary operation `==` cannot be applied to type `&Rc<TypeSymbol>`
+  --> src\semantic\symbols.rs:31:10
+   |
+26 | #[derive(Debug, Clone, PartialEq)]
+   |                        --------- in this derive macro expansion
+...
+31 |     Type(Rc<super::types::TypeSymbol>),
+   |          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   |
+note: an implementation of `PartialEq` might be missing for `TypeSymbol`
+  --> src\semantic\types.rs:8:1
+   |
+8  | pub struct TypeSymbol {
+   | ^^^^^^^^^^^^^^^^^^^^^ must implement `PartialEq`
+help: consider annotating `TypeSymbol` with `#[derive(PartialEq)]`
+  --> src\semantic\types.rs:8:1
+   |
+8  + #[derive(PartialEq)]
+9  | pub struct TypeSymbol {
+   |
+
+error[E0369]: binary operation `==` cannot be applied to type `&Rc<MethodSymbol>`
+  --> src\semantic\symbols.rs:33:12
+   |
+26 | #[derive(Debug, Clone, PartialEq)]
+   |                        --------- in this derive macro expansion
+...
+33 |     Method(Rc<MethodSymbol>),
+   |            ^^^^^^^^^^^^^^^^
+   |
+note: an implementation of `PartialEq` might be missing for `MethodSymbol`
+  --> src\semantic\symbols.rs:50:1
+   |
+50 | pub struct MethodSymbol {
+   | ^^^^^^^^^^^^^^^^^^^^^^^ must implement `PartialEq`
+help: consider annotating `MethodSymbol` with `#[derive(PartialEq)]`
+   |
+50 + #[derive(PartialEq)]
+51 | pub struct MethodSymbol {
+   |
+
+error[E0369]: binary operation `==` cannot be applied to type `&Rc<TypeSymbol>`
+  --> src\semantic\symbols.rs:37:11
+   |
+26 | #[derive(Debug, Clone, PartialEq)]
+   |                        --------- in this derive macro expansion
+...
+37 |     Field(Rc<super::types::TypeSymbol>),
+   |           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   |
+note: an implementation of `PartialEq` might be missing for `TypeSymbol`
+  --> src\semantic\types.rs:8:1
+   |
+8  | pub struct TypeSymbol {
+   | ^^^^^^^^^^^^^^^^^^^^^ must implement `PartialEq`
+help: consider annotating `TypeSymbol` with `#[derive(PartialEq)]`
+  --> src\semantic\types.rs:8:1
+   |
+8  + #[derive(PartialEq)]
+9  | pub struct TypeSymbol {
+   |
+
+error[E0369]: binary operation `==` cannot be applied to type `&Rc<TypeSymbol>`
+  --> src\semantic\symbols.rs:41:15
+   |
+26 | #[derive(Debug, Clone, PartialEq)]
+   |                        --------- in this derive macro expansion
+...
+41 |     Parameter(Rc<super::types::TypeSymbol>),
+   |               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   |
+note: an implementation of `PartialEq` might be missing for `TypeSymbol`
+  --> src\semantic\types.rs:8:1
+   |
+8  | pub struct TypeSymbol {
+   | ^^^^^^^^^^^^^^^^^^^^^ must implement `PartialEq`
+help: consider annotating `TypeSymbol` with `#[derive(PartialEq)]`
+  --> src\semantic\types.rs:8:1
+   |
+8  + #[derive(PartialEq)]
+9  | pub struct TypeSymbol {
+   |
+
+error[E0369]: binary operation `==` cannot be applied to type `&Rc<TypeSymbol>`
+  --> src\semantic\symbols.rs:43:14
+   |
+26 | #[derive(Debug, Clone, PartialEq)]
+   |                        --------- in this derive macro expansion
+...
+43 |     Variable(Rc<super::types::TypeSymbol>),
+   |              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   |
+note: an implementation of `PartialEq` might be missing for `TypeSymbol`
+  --> src\semantic\types.rs:8:1
+   |
+8  | pub struct TypeSymbol {
+   | ^^^^^^^^^^^^^^^^^^^^^ must implement `PartialEq`
+help: consider annotating `TypeSymbol` with `#[derive(PartialEq)]`
+  --> src\semantic\types.rs:8:1
+   |
+8  + #[derive(PartialEq)]
+9  | pub struct TypeSymbol {
+   |
+
+error[E0560]: struct `TypeSymbol` has no field named `is_nullable`
+  --> src\semantic\type_checker.rs:87:13
+   |
+87 |             is_nullable: false,
+   |             ^^^^^^^^^^^ `TypeSymbol` does not have this field
+   |
+   = note: available fields are: `type_parameters`, `namespace`, `accessibility`, `modifiers`
+
+error[E0560]: struct `TypeSymbol` has no field named `generic_parameters`
+  --> src\semantic\type_checker.rs:88:13
+   |
+88 |             generic_parameters: Vec::new(),
+   |             ^^^^^^^^^^^^^^^^^^ unknown field
+   |
+help: a field with a similar name exists
+   |
+88 -             generic_parameters: Vec::new(),
+88 +             type_parameters: Vec::new(),
+   |
+
+error[E0560]: struct `TypeSymbol` has no field named `is_nullable`
+   --> src\semantic\type_checker.rs:176:13
+    |
+176 |             is_nullable: false,
+    |             ^^^^^^^^^^^ `TypeSymbol` does not have this field
+    |
+    = note: available fields are: `type_parameters`, `namespace`, `accessibility`, `modifiers`
+
+error[E0560]: struct `TypeSymbol` has no field named `generic_parameters`
+   --> src\semantic\type_checker.rs:177:13
+    |
+177 |             generic_parameters: Vec::new(),
+    |             ^^^^^^^^^^^^^^^^^^ unknown field
+    |
+help: a field with a similar name exists
+    |
+177 -             generic_parameters: Vec::new(),
+177 +             type_parameters: Vec::new(),
+    |
+
+error[E0026]: variant `BoundNodeKind::Call` does not have a field named `target`
+   --> src\semantic\type_checker.rs:298:35
+    |
+298 |             BoundNodeKind::Call { target, arguments } => {
+    |                                   ^^^^^^
+    |                                   |
+    |                                   variant `BoundNodeKind::Call` does not have this field
+    |                                   help: `BoundNodeKind::Call` has a field named `method`
+
+error[E0027]: pattern does not mention field `method`
+   --> src\semantic\type_checker.rs:298:13
+    |
+298 |             BoundNodeKind::Call { target, arguments } => {
+    |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ missing field `method`
+    |
+help: include the missing field in the pattern
+    |
+298 |             BoundNodeKind::Call { target, arguments, method } => {
+    |                                                    ++++++++
+help: if you don't care about this missing field, you can explicitly ignore it
+    |
+298 |             BoundNodeKind::Call { target, arguments, method: _ } => {
+    |                                                    +++++++++++
+help: or always ignore missing fields here
+    |
+298 |             BoundNodeKind::Call { target, arguments, .. } => {
+    |                                                    ++++
+
+error[E0026]: variant `BoundNodeKind::MemberAccess` does not have a field named `object`
+   --> src\semantic\type_checker.rs:301:43
+    |
+301 |             BoundNodeKind::MemberAccess { object, member } => {
+    |                                           ^^^^^^
+    |                                           |
+    |                                           variant `BoundNodeKind::MemberAccess` does not have this field
+    |                                           help: `BoundNodeKind::MemberAccess` has a field named `instance`
+
+error[E0027]: pattern does not mention field `instance`
+   --> src\semantic\type_checker.rs:301:13
+    |
+301 |             BoundNodeKind::MemberAccess { object, member } => {
+    |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ missing field `instance`
+    |
+help: include the missing field in the pattern
+    |
+301 |             BoundNodeKind::MemberAccess { object, member, instance } => {
+    |                                                         ++++++++++
+help: if you don't care about this missing field, you can explicitly ignore it
+    |
+301 |             BoundNodeKind::MemberAccess { object, member, instance: _ } => {
+    |                                                         +++++++++++++
+help: or always ignore missing fields here
+    |
+301 |             BoundNodeKind::MemberAccess { object, member, .. } => {
+    |                                                         ++++
+
+error[E0599]: no variant or associated item named `Equal` found for enum `BinaryOperator` in the current scope
+   --> src\semantic\type_checker.rs:360:29
+    |
+360 |             BinaryOperator::Equal | BinaryOperator::NotEqual => {
+    |                             ^^^^^ variant or associated item not found in `BinaryOperator`
+    |
+   ::: src\semantic\binding.rs:132:1
+    |
+132 | pub enum BinaryOperator {
+    | ----------------------- variant or associated item `Equal` not found for this enum
+    |
+help: there is a variant with a similar name
+    |
+360 |             BinaryOperator::Equals | BinaryOperator::NotEqual => {
+    |                                  +
+
+error[E0599]: no variant or associated item named `NotEqual` found for enum `BinaryOperator` in the current scope
+   --> src\semantic\type_checker.rs:360:53
+    |
+360 |             BinaryOperator::Equal | BinaryOperator::NotEqual => {
+    |                                                     ^^^^^^^^ variant or associated item not found in `BinaryOperator`
+    |
+   ::: src\semantic\binding.rs:132:1
+    |
+132 | pub enum BinaryOperator {
+    | ----------------------- variant or associated item `NotEqual` not found for this enum
+    |
+help: there is a variant with a similar name
+    |
+360 |             BinaryOperator::Equal | BinaryOperator::NotEquals => {
+    |                                                             +
+
+error[E0599]: no variant or associated item named `LogicalAnd` found for enum `BinaryOperator` in the current scope
+   --> src\semantic\type_checker.rs:375:29
+    |
+375 |             BinaryOperator::LogicalAnd | BinaryOperator::LogicalOr => {
+    |                             ^^^^^^^^^^ variant or associated item not found in `BinaryOperator`
+    |
+   ::: src\semantic\binding.rs:132:1
+    |
+132 | pub enum BinaryOperator {
+    | ----------------------- variant or associated item `LogicalAnd` not found for this enum
+
+error[E0599]: no variant or associated item named `LogicalOr` found for enum `BinaryOperator` in the current scope
+   --> src\semantic\type_checker.rs:375:58
+    |
+375 |             BinaryOperator::LogicalAnd | BinaryOperator::LogicalOr => {
+    |                                                          ^^^^^^^^^ variant or associated item not found in `BinaryOperator`
+    |
+   ::: src\semantic\binding.rs:132:1
+    |
+132 | pub enum BinaryOperator {
+    | ----------------------- variant or associated item `LogicalOr` not found for this enum
+
+error[E0308]: mismatched types
+   --> src\semantic\type_checker.rs:459:16
+    |
+459 |             Ok(member_type.clone())
+    |             -- ^^^^^^^^^^^^^^^^^^^ expected `Rc<TypeSymbol>`, found `TypeMember`
+    |             |
+    |             arguments to this enum variant are incorrect
+    |
+    = note: expected struct `Rc<TypeSymbol>`
+               found struct `TypeMember`
+help: the type constructed contains `TypeMember` due to the type of the argument passed
+   --> src\semantic\type_checker.rs:459:13
+    |
+459 |             Ok(member_type.clone())
+    |             ^^^-------------------^
+    |                |
+    |                this argument influences the type of `Ok`
+note: tuple variant defined here
+   --> /rustc/6b00bc3880198600130e1cf62b8f8a93494488cc\library\core\src\result.rs:552:5
+
+error[E0369]: binary operation `==` cannot be applied to type `&Rc<TypeSymbol>`
+  --> src\semantic\generics.rs:43:14
+   |
+34 | #[derive(Debug, Clone, PartialEq)]
+   |                        --------- in this derive macro expansion
+...
+43 |     BaseType(Rc<TypeSymbol>),
+   |              ^^^^^^^^^^^^^^
+   |
+note: an implementation of `PartialEq` might be missing for `TypeSymbol`
+  --> src\semantic\types.rs:8:1
+   |
+8  | pub struct TypeSymbol {
+   | ^^^^^^^^^^^^^^^^^^^^^ must implement `PartialEq`
+help: consider annotating `TypeSymbol` with `#[derive(PartialEq)]`
+  --> src\semantic\types.rs:8:1
+   |
+8  + #[derive(PartialEq)]
+9  | pub struct TypeSymbol {
+   |
+
+error[E0369]: binary operation `==` cannot be applied to type `&Rc<TypeSymbol>`
+  --> src\semantic\generics.rs:45:15
+   |
+34 | #[derive(Debug, Clone, PartialEq)]
+   |                        --------- in this derive macro expansion
+...
+45 |     Interface(Rc<TypeSymbol>),
+   |               ^^^^^^^^^^^^^^
+   |
+note: an implementation of `PartialEq` might be missing for `TypeSymbol`
+  --> src\semantic\types.rs:8:1
+   |
+8  | pub struct TypeSymbol {
+   | ^^^^^^^^^^^^^^^^^^^^^ must implement `PartialEq`
+help: consider annotating `TypeSymbol` with `#[derive(PartialEq)]`
+  --> src\semantic\types.rs:8:1
+   |
+8  + #[derive(PartialEq)]
+9  | pub struct TypeSymbol {
+   |
+
+error[E0609]: no field `generic_parameters` on type `&TypeSymbol`
+   --> src\semantic\generics.rs:109:25
+    |
+109 |         if generic_type.generic_parameters.len() != type_arguments.len() {
+    |                         ^^^^^^^^^^^^^^^^^^ unknown field
+    |
+help: a field with a similar name exists
+    |
+109 -         if generic_type.generic_parameters.len() != type_arguments.len() {
+109 +         if generic_type.type_parameters.len() != type_arguments.len() {
+    |
+
+error[E0609]: no field `generic_parameters` on type `&TypeSymbol`
+   --> src\semantic\generics.rs:113:30
+    |
+113 |                 generic_type.generic_parameters.len(),
+    |                              ^^^^^^^^^^^^^^^^^^ unknown field
+    |
+help: a field with a similar name exists
+    |
+113 -                 generic_type.generic_parameters.len(),
+113 +                 generic_type.type_parameters.len(),
+    |
+
+error[E0609]: no field `generic_parameters` on type `&TypeSymbol`
+   --> src\semantic\generics.rs:120:42
+    |
+120 |         for (param, arg) in generic_type.generic_parameters.iter().zip(&type_arguments) {
+    |                                          ^^^^^^^^^^^^^^^^^^ unknown field
+    |
+help: a field with a similar name exists
+    |
+120 -         for (param, arg) in generic_type.generic_parameters.iter().zip(&type_arguments) {
+120 +         for (param, arg) in generic_type.type_parameters.iter().zip(&type_arguments) {
+    |
+
+error[E0609]: no field `generic_parameters` on type `&TypeSymbol`
+   --> src\semantic\generics.rs:125:40
+    |
+125 |         for (i, param) in generic_type.generic_parameters.iter().enumerate() {
+    |                                        ^^^^^^^^^^^^^^^^^^ unknown field
+    |
+help: a field with a similar name exists
+    |
+125 -         for (i, param) in generic_type.generic_parameters.iter().enumerate() {
+125 +         for (i, param) in generic_type.type_parameters.iter().enumerate() {
+    |
+
+error[E0560]: struct `TypeSymbol` has no field named `is_nullable`
+   --> src\semantic\generics.rs:202:13
+    |
+202 |             is_nullable: definition.is_nullable,
+    |             ^^^^^^^^^^^ `TypeSymbol` does not have this field
+    |
+    = note: available fields are: `type_parameters`, `namespace`, `accessibility`, `modifiers`
+
+error[E0609]: no field `is_nullable` on type `&TypeSymbol`
+   --> src\semantic\generics.rs:202:37
+    |
+202 |             is_nullable: definition.is_nullable,
+    |                                     ^^^^^^^^^^^ unknown field
+    |
+    = note: available fields are: `name`, `kind`, `base_type`, `interfaces`, `type_parameters` ... and 4 others
+
+error[E0560]: struct `TypeSymbol` has no field named `generic_parameters`
+   --> src\semantic\generics.rs:203:13
+    |
+203 |             generic_parameters: Vec::new(), // Instantiated types have no parameters
+    |             ^^^^^^^^^^^^^^^^^^ unknown field
+    |
+help: a field with a similar name exists
+    |
+203 -             generic_parameters: Vec::new(), // Instantiated types have no parameters
+203 +             type_parameters: Vec::new(), // Instantiated types have no parameters
+    |
+
+error[E0560]: struct `TypeSymbol` has no field named `is_nullable`
+   --> src\semantic\generics.rs:225:13
+    |
+225 |             is_nullable: false,
+    |             ^^^^^^^^^^^ `TypeSymbol` does not have this field
+    |
+    = note: available fields are: `type_parameters`, `namespace`, `accessibility`, `modifiers`
+
+error[E0560]: struct `TypeSymbol` has no field named `generic_parameters`
+   --> src\semantic\generics.rs:226:13
+    |
+226 |             generic_parameters: Vec::new(),
+    |             ^^^^^^^^^^^^^^^^^^ unknown field
+    |
+help: a field with a similar name exists
+    |
+226 -             generic_parameters: Vec::new(),
+226 +             type_parameters: Vec::new(),
+    |
+
+error[E0560]: struct `TypeSymbol` has no field named `is_nullable`
+   --> src\semantic\generics.rs:230:17
+    |
+230 |                 is_nullable: false,
+    |                 ^^^^^^^^^^^ `TypeSymbol` does not have this field
+    |
+    = note: available fields are: `type_parameters`, `namespace`, `accessibility`, `modifiers`
+
+error[E0560]: struct `TypeSymbol` has no field named `generic_parameters`
+   --> src\semantic\generics.rs:231:17
+    |
+231 |                 generic_parameters: Vec::new(),
+    |                 ^^^^^^^^^^^^^^^^^^ unknown field
+    |
+help: a field with a similar name exists
+    |
+231 -                 generic_parameters: Vec::new(),
+231 +                 type_parameters: Vec::new(),
+    |
+
+error[E0560]: struct `TypeSymbol` has no field named `is_nullable`
+   --> src\semantic\generics.rs:246:13
+    |
+246 |             is_nullable: true,
+    |             ^^^^^^^^^^^ `TypeSymbol` does not have this field
+    |
+    = note: available fields are: `type_parameters`, `namespace`, `accessibility`, `modifiers`
+
+error[E0560]: struct `TypeSymbol` has no field named `generic_parameters`
+   --> src\semantic\generics.rs:247:13
+    |
+247 |             generic_parameters: Vec::new(),
+    |             ^^^^^^^^^^^^^^^^^^ unknown field
+    |
+help: a field with a similar name exists
+    |
+247 -             generic_parameters: Vec::new(),
+247 +             type_parameters: Vec::new(),
+    |
+
+error[E0560]: struct `TypeSymbol` has no field named `is_nullable`
+   --> src\semantic\generics.rs:251:17
+    |
+251 |                 is_nullable: false,
+    |                 ^^^^^^^^^^^ `TypeSymbol` does not have this field
+    |
+    = note: available fields are: `type_parameters`, `namespace`, `accessibility`, `modifiers`
+
+error[E0560]: struct `TypeSymbol` has no field named `generic_parameters`
+   --> src\semantic\generics.rs:252:17
+    |
+252 |                 generic_parameters: vec!["T".to_string()],
+    |                 ^^^^^^^^^^^^^^^^^^ unknown field
+    |
+help: a field with a similar name exists
+    |
+252 -                 generic_parameters: vec!["T".to_string()],
+252 +                 type_parameters: vec!["T".to_string()],
+    |
+
+error[E0560]: struct `TypeSymbol` has no field named `is_nullable`
+   --> src\semantic\mod.rs:204:21
+    |
+204 |                     is_nullable: false,
+    |                     ^^^^^^^^^^^ `TypeSymbol` does not have this field
+    |
+    = note: available fields are: `type_parameters`, `namespace`, `accessibility`, `modifiers`
+
+error[E0560]: struct `TypeSymbol` has no field named `generic_parameters`
+   --> src\semantic\mod.rs:205:21
+    |
+205 |                     generic_parameters: Vec::new(),
+    |                     ^^^^^^^^^^^^^^^^^^ unknown field
+    |
+help: a field with a similar name exists
+    |
+205 -                     generic_parameters: Vec::new(),
+205 +                     type_parameters: Vec::new(),
+    |
+
+error[E0308]: mismatched types
+   --> src\semantic\mod.rs:300:45
+    |
+300 |         let symbol = Symbol::new(full_name, SymbolKind::Type);
+    |                      -----------            ^^^^^^^^^^^^^^^^ expected `SymbolKind`, found enum constructor
+    |                      |
+    |                      arguments to this function are incorrect
+    |
+   ::: src\semantic\symbols.rs:31:5
+    |
+31  |     Type(Rc<super::types::TypeSymbol>),
+    |     ---- `Type` defines an enum variant constructor here, which should be called
+    |
+    = note:          expected enum `SymbolKind`
+            found enum constructor `fn(Rc<TypeSymbol>) -> SymbolKind {SymbolKind::Type}`
+note: associated function defined here
+   --> src\semantic\symbols.rs:76:12
+    |
+76  |     pub fn new(name: String, kind: SymbolKind) -> Self {
+    |            ^^^               ----------------
+help: use parentheses to construct this tuple variant
+    |
+300 |         let symbol = Symbol::new(full_name, SymbolKind::Type(/* Rc<TypeSymbol> */));
+    |                                                             ++++++++++++++++++++++
+
+error[E0308]: mismatched types
+   --> src\semantic\mod.rs:328:53
+    |
+328 |         let symbol = Symbol::new(full_name.clone(), SymbolKind::Type);
+    |                      -----------                    ^^^^^^^^^^^^^^^^ expected `SymbolKind`, found enum constructor
+    |                      |
+    |                      arguments to this function are incorrect
+    |
+   ::: src\semantic\symbols.rs:31:5
+    |
+31  |     Type(Rc<super::types::TypeSymbol>),
+    |     ---- `Type` defines an enum variant constructor here, which should be called
+    |
+    = note:          expected enum `SymbolKind`
+            found enum constructor `fn(Rc<TypeSymbol>) -> SymbolKind {SymbolKind::Type}`
+note: associated function defined here
+   --> src\semantic\symbols.rs:76:12
+    |
+76  |     pub fn new(name: String, kind: SymbolKind) -> Self {
+    |            ^^^               ----------------
+help: use parentheses to construct this tuple variant
+    |
+328 |         let symbol = Symbol::new(full_name.clone(), SymbolKind::Type(/* Rc<TypeSymbol> */));
+    |                                                                     ++++++++++++++++++++++
+
+error[E0308]: mismatched types
+   --> src\semantic\mod.rs:348:45
+    |
+348 |         let symbol = Symbol::new(full_name, SymbolKind::Type);
+    |                      -----------            ^^^^^^^^^^^^^^^^ expected `SymbolKind`, found enum constructor
+    |                      |
+    |                      arguments to this function are incorrect
+    |
+   ::: src\semantic\symbols.rs:31:5
+    |
+31  |     Type(Rc<super::types::TypeSymbol>),
+    |     ---- `Type` defines an enum variant constructor here, which should be called
+    |
+    = note:          expected enum `SymbolKind`
+            found enum constructor `fn(Rc<TypeSymbol>) -> SymbolKind {SymbolKind::Type}`
+note: associated function defined here
+   --> src\semantic\symbols.rs:76:12
+    |
+76  |     pub fn new(name: String, kind: SymbolKind) -> Self {
+    |            ^^^               ----------------
+help: use parentheses to construct this tuple variant
+    |
+348 |         let symbol = Symbol::new(full_name, SymbolKind::Type(/* Rc<TypeSymbol> */));
+    |                                                             ++++++++++++++++++++++
+
+error[E0308]: mismatched types
+   --> src\semantic\mod.rs:357:45
+    |
+357 |         let symbol = Symbol::new(full_name, SymbolKind::Method);
+    |                      -----------            ^^^^^^^^^^^^^^^^^^ expected `SymbolKind`, found enum constructor
+    |                      |
+    |                      arguments to this function are incorrect
+    |
+   ::: src\semantic\symbols.rs:33:5
+    |
+33  |     Method(Rc<MethodSymbol>),
+    |     ------ `Method` defines an enum variant constructor here, which should be called
+    |
+    = note:          expected enum `SymbolKind`
+            found enum constructor `fn(Rc<MethodSymbol>) -> SymbolKind {SymbolKind::Method}`
+note: associated function defined here
+   --> src\semantic\symbols.rs:76:12
+    |
+76  |     pub fn new(name: String, kind: SymbolKind) -> Self {
+    |            ^^^               ----------------
+help: use parentheses to construct this tuple variant
+    |
+357 |         let symbol = Symbol::new(full_name, SymbolKind::Method(/* Rc<MethodSymbol> */));
+    |                                                               ++++++++++++++++++++++++
+
+error[E0308]: mismatched types
+   --> src\semantic\mod.rs:375:45
+    |
+375 |         let symbol = Symbol::new(full_name, SymbolKind::Field);
+    |                      -----------            ^^^^^^^^^^^^^^^^^ expected `SymbolKind`, found enum constructor
+    |                      |
+    |                      arguments to this function are incorrect
+    |
+   ::: src\semantic\symbols.rs:37:5
+    |
+37  |     Field(Rc<super::types::TypeSymbol>),
+    |     ----- `Field` defines an enum variant constructor here, which should be called
+    |
+    = note:          expected enum `SymbolKind`
+            found enum constructor `fn(Rc<TypeSymbol>) -> SymbolKind {SymbolKind::Field}`
+note: associated function defined here
+   --> src\semantic\symbols.rs:76:12
+    |
+76  |     pub fn new(name: String, kind: SymbolKind) -> Self {
+    |            ^^^               ----------------
+help: use parentheses to construct this tuple variant
+    |
+375 |         let symbol = Symbol::new(full_name, SymbolKind::Field(/* Rc<TypeSymbol> */));
+    |                                                              ++++++++++++++++++++++
+
+error[E0308]: mismatched types
+   --> src\semantic\mod.rs:393:45
+    |
+393 |         let symbol = Symbol::new(full_name, SymbolKind::Field);
+    |                      -----------            ^^^^^^^^^^^^^^^^^ expected `SymbolKind`, found enum constructor
+    |                      |
+    |                      arguments to this function are incorrect
+    |
+   ::: src\semantic\symbols.rs:37:5
+    |
+37  |     Field(Rc<super::types::TypeSymbol>),
+    |     ----- `Field` defines an enum variant constructor here, which should be called
+    |
+    = note:          expected enum `SymbolKind`
+            found enum constructor `fn(Rc<TypeSymbol>) -> SymbolKind {SymbolKind::Field}`
+note: associated function defined here
+   --> src\semantic\symbols.rs:76:12
+    |
+76  |     pub fn new(name: String, kind: SymbolKind) -> Self {
+    |            ^^^               ----------------
+help: use parentheses to construct this tuple variant
+    |
+393 |         let symbol = Symbol::new(full_name, SymbolKind::Field(/* Rc<TypeSymbol> */));
+    |                                                              ++++++++++++++++++++++
+
+error[E0560]: struct `TypeSymbol` has no field named `is_nullable`
+   --> src\assembly_loader.rs:227:13
+    |
+227 |             is_nullable: false,
+    |             ^^^^^^^^^^^ `TypeSymbol` does not have this field
+    |
+    = note: available fields are: `type_parameters`, `namespace`, `accessibility`, `modifiers`
+
+error[E0560]: struct `TypeSymbol` has no field named `generic_parameters`
+   --> src\assembly_loader.rs:228:13
+    |
+228 |             generic_parameters: Vec::new(),
+    |             ^^^^^^^^^^^^^^^^^^ unknown field
+    |
+help: a field with a similar name exists
+    |
+228 -             generic_parameters: Vec::new(),
+228 +             type_parameters: Vec::new(),
+    |
+
+error[E0560]: struct `TypeSymbol` has no field named `is_nullable`
+   --> src\assembly_loader.rs:332:13
+    |
+332 |             is_nullable: false,
+    |             ^^^^^^^^^^^ `TypeSymbol` does not have this field
+    |
+    = note: available fields are: `type_parameters`, `namespace`, `accessibility`, `modifiers`
+
+error[E0560]: struct `TypeSymbol` has no field named `generic_parameters`
+   --> src\assembly_loader.rs:333:13
+    |
+333 |             generic_parameters: Vec::new(),
+    |             ^^^^^^^^^^^^^^^^^^ unknown field
+    |
+help: a field with a similar name exists
+    |
+333 -             generic_parameters: Vec::new(),
+333 +             type_parameters: Vec::new(),
+    |
+
+error[E0560]: struct `TypeSymbol` has no field named `is_nullable`
+   --> src\assembly_loader.rs:342:13
+    |
+342 |             is_nullable: false,
+    |             ^^^^^^^^^^^ `TypeSymbol` does not have this field
+    |
+    = note: available fields are: `type_parameters`, `namespace`, `accessibility`, `modifiers`
+
+error[E0560]: struct `TypeSymbol` has no field named `generic_parameters`
+   --> src\assembly_loader.rs:343:13
+    |
+343 |             generic_parameters: Vec::new(),
+    |             ^^^^^^^^^^^^^^^^^^ unknown field
+    |
+help: a field with a similar name exists
+    |
+343 -             generic_parameters: Vec::new(),
+343 +             type_parameters: Vec::new(),
+    |
+
+error[E0599]: the method `entry` exists for struct `HashMap<MetadataTable, Vec<TableRow>>`, but its trait bounds were not satisfied
+   --> src\codegen\metadata.rs:341:32
+    |
+8   | pub enum MetadataTable {
+    | ---------------------- doesn't satisfy `MetadataTable: Hash`
+...
+341 |         let rows = self.tables.entry(table).or_insert_with(Vec::new);
+    |                                ^^^^^ method cannot be called on `HashMap<MetadataTable, Vec<TableRow>>` due to unsatisfied trait bounds
+    |
+    = note: the following trait bounds were not satisfied:
+            `MetadataTable: Hash`
+help: consider annotating `MetadataTable` with `#[derive(Hash)]`
+    |
+8   + #[derive(Hash)]
+9   | pub enum MetadataTable {
+    |
+
+error[E0308]: mismatched types
+   --> src\codegen\mod.rs:225:75
+    |
+225 |                         _ => method.add_instruction(ILInstruction::Ldc_i4(*i)),
+    |                                                     --------------------- ^^ expected `i32`, found `i64`
+    |                                                     |
+    |                                                     arguments to this enum variant are incorrect
+    |
+note: tuple variant defined here
+   --> src\codegen\il.rs:26:5
+    |
+26  |     Ldc_i4(i32),
+    |     ^^^^^^
+help: you can convert an `i64` to an `i32` and panic if the converted value doesn't fit
+    |
+225 |                         _ => method.add_instruction(ILInstruction::Ldc_i4((*i).try_into().unwrap())),
+    |                                                                           +  +++++++++++++++++++++
+
+error[E0599]: no variant or associated item named `Equal` found for enum `BinaryOperator` in the current scope
+   --> src\codegen\mod.rs:285:29
+    |
+285 |             BinaryOperator::Equal => method.add_instruction(ILInstruction::Ceq),
+    |                             ^^^^^ variant or associated item not found in `BinaryOperator`
+    |
+   ::: src\semantic\binding.rs:132:1
+    |
+132 | pub enum BinaryOperator {
+    | ----------------------- variant or associated item `Equal` not found for this enum
+    |
+help: there is a variant with a similar name
+    |
+285 |             BinaryOperator::Equals => method.add_instruction(ILInstruction::Ceq),
+    |                                  +
+
+error[E0599]: no variant or associated item named `NotEqual` found for enum `BinaryOperator` in the current scope
+   --> src\codegen\mod.rs:286:29
+    |
+286 |             BinaryOperator::NotEqual => {
+    |                             ^^^^^^^^ variant or associated item not found in `BinaryOperator`
+    |
+   ::: src\semantic\binding.rs:132:1
+    |
+132 | pub enum BinaryOperator {
+    | ----------------------- variant or associated item `NotEqual` not found for this enum
+    |
+help: there is a variant with a similar name
+    |
+286 |             BinaryOperator::NotEquals => {
+    |                                     +
+
+error[E0599]: no variant or associated item named `LogicalAnd` found for enum `BinaryOperator` in the current scope
+   --> src\codegen\mod.rs:303:29
+    |
+303 |             BinaryOperator::LogicalAnd => method.add_instruction(ILInstruction::And),
+    |                             ^^^^^^^^^^ variant or associated item not found in `BinaryOperator`
+    |
+   ::: src\semantic\binding.rs:132:1
+    |
+132 | pub enum BinaryOperator {
+    | ----------------------- variant or associated item `LogicalAnd` not found for this enum
+
+error[E0599]: no variant or associated item named `LogicalOr` found for enum `BinaryOperator` in the current scope
+   --> src\codegen\mod.rs:304:29
+    |
+304 |             BinaryOperator::LogicalOr => method.add_instruction(ILInstruction::Or),
+    |                             ^^^^^^^^^ variant or associated item not found in `BinaryOperator`
+    |
+   ::: src\semantic\binding.rs:132:1
+    |
+132 | pub enum BinaryOperator {
+    | ----------------------- variant or associated item `LogicalOr` not found for this enum
+
+error[E0599]: no method named `merge` found for struct `DiagnosticBag` in the current scope
+   --> src\compiler.rs:173:34
+    |
+173 |                 self.diagnostics.merge(parser.diagnostics());
+    |                                  ^^^^^ method not found in `DiagnosticBag`
+    |
+   ::: src\diagnostics\mod.rs:12:1
+    |
+12  | pub struct DiagnosticBag {
+    | ------------------------ method `merge` not found for this struct
+
+error[E0599]: no method named `merge` found for struct `DiagnosticBag` in the current scope
+   --> src\compiler.rs:178:30
+    |
+178 |             self.diagnostics.merge(parser.diagnostics());
+    |                              ^^^^^ method not found in `DiagnosticBag`
+    |
+   ::: src\diagnostics\mod.rs:12:1
+    |
+12  | pub struct DiagnosticBag {
+    | ------------------------ method `merge` not found for this struct
+
+error[E0599]: no method named `merge` found for struct `DiagnosticBag` in the current scope
+   --> src\compiler.rs:204:34
+    |
+204 |                 self.diagnostics.merge(model.diagnostics());
+    |                                  ^^^^^ method not found in `DiagnosticBag`
+    |
+   ::: src\diagnostics\mod.rs:12:1
+    |
+12  | pub struct DiagnosticBag {
+    | ------------------------ method `merge` not found for this struct
+
+error[E0599]: no method named `merge` found for struct `DiagnosticBag` in the current scope
+   --> src\compiler.rs:209:30
+    |
+209 |             self.diagnostics.merge(model.diagnostics());
+    |                              ^^^^^ method not found in `DiagnosticBag`
+    |
+   ::: src\diagnostics\mod.rs:12:1
+    |
+12  | pub struct DiagnosticBag {
+    | ------------------------ method `merge` not found for this struct
+
+error[E0599]: no method named `has_warnings` found for struct `DiagnosticBag` in the current scope
+   --> src\compiler.rs:287:64
+    |
+287 |         if self.options.warnings_as_errors && self.diagnostics.has_warnings() {
+    |                                                                ^^^^^^^^^^^^
+    |
+   ::: src\diagnostics\mod.rs:12:1
+    |
+12  | pub struct DiagnosticBag {
+    | ------------------------ method `has_warnings` not found for this struct
+    |
+help: there is a method `add_warning` with a similar name, but with different arguments
+   --> src\diagnostics\mod.rs:124:5
+    |
+124 |     pub fn add_warning(&mut self, code: DiagnosticCode, message: impl Into<String>, range: TextRange) {
+    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused variable: `token`
+  --> src\syntax\visitor.rs:16:31
+   |
+16 |     fn visit_token(&mut self, token: &crate::syntax::SyntaxToken) {
+   |                               ^^^^^ help: if this is intentional, prefix it with an underscore: `_token`
+   |
+   = note: `#[warn(unused_variables)]` on by default
+
+warning: unused variable: `method_node`
+   --> src\semantic\binding.rs:255:35
+    |
+255 |     fn bind_parameters(&mut self, method_node: &SyntaxNode) {
+    |                                   ^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_method_node`
+
+warning: unused variable: `node`
+   --> src\semantic\binding.rs:261:33
+    |
+261 |     fn bind_property(&mut self, node: &SyntaxNode) {
+    |                                 ^^^^ help: if this is intentional, prefix it with an underscore: `_node`
+
+warning: unused variable: `node`
+   --> src\semantic\binding.rs:266:30
+    |
+266 |     fn bind_field(&mut self, node: &SyntaxNode) {
+    |                              ^^^^ help: if this is intentional, prefix it with an underscore: `_node`
+
+warning: unused variable: `node`
+   --> src\semantic\binding.rs:360:41
+    |
+360 |     fn bind_return_statement(&mut self, node: &SyntaxNode) -> BoundNode {
+    |                                         ^^^^ help: if this is intentional, prefix it with an underscore: `_node`
+
+warning: unused variable: `node`
+   --> src\semantic\binding.rs:403:45
+    |
+403 |     fn bind_expression_statement(&mut self, node: &SyntaxNode) -> BoundNode {
+    |                                             ^^^^ help: if this is intentional, prefix it with an underscore: `_node`
+
+warning: unused variable: `node`
+   --> src\semantic\binding.rs:461:40
+    |
+461 |     fn bind_numeric_literal(&mut self, node: &SyntaxNode) -> BoundNode {
+    |                                        ^^^^ help: if this is intentional, prefix it with an underscore: `_node`
+
+warning: unused variable: `node`
+   --> src\semantic\binding.rs:472:39
+    |
+472 |     fn bind_string_literal(&mut self, node: &SyntaxNode) -> BoundNode {
+    |                                       ^^^^ help: if this is intentional, prefix it with an underscore: `_node`
+
+warning: unused variable: `node`
+   --> src\semantic\binding.rs:483:42
+    |
+483 |     fn bind_character_literal(&mut self, node: &SyntaxNode) -> BoundNode {
+    |                                          ^^^^ help: if this is intentional, prefix it with an underscore: `_node`
+
+warning: unused variable: `node`
+   --> src\semantic\binding.rs:529:38
+    |
+529 |     fn bind_member_access(&mut self, node: &SyntaxNode) -> BoundNode {
+    |                                      ^^^^ help: if this is intentional, prefix it with an underscore: `_node`
+
+warning: unused variable: `node`
+   --> src\semantic\binding.rs:535:35
+    |
+535 |     fn bind_invocation(&mut self, node: &SyntaxNode) -> BoundNode {
+    |                                   ^^^^ help: if this is intentional, prefix it with an underscore: `_node`
+
+warning: unused variable: `node`
+   --> src\semantic\binding.rs:541:35
+    |
+541 |     fn bind_assignment(&mut self, node: &SyntaxNode) -> BoundNode {
+    |                                   ^^^^ help: if this is intentional, prefix it with an underscore: `_node`
+
+warning: unused variable: `node`
+   --> src\semantic\binding.rs:547:42
+    |
+547 |     fn bind_binary_expression(&mut self, node: &SyntaxNode) -> BoundNode {
+    |                                          ^^^^ help: if this is intentional, prefix it with an underscore: `_node`
+
+warning: unused variable: `node`
+   --> src\semantic\binding.rs:553:41
+    |
+553 |     fn bind_unary_expression(&mut self, node: &SyntaxNode) -> BoundNode {
+    |                                         ^^^^ help: if this is intentional, prefix it with an underscore: `_node`
+
+warning: unused variable: `node`
+   --> src\semantic\binding.rs:559:40
+    |
+559 |     fn bind_cast_expression(&mut self, node: &SyntaxNode) -> BoundNode {
+    |                                        ^^^^ help: if this is intentional, prefix it with an underscore: `_node`
+
+warning: unused variable: `node`
+   --> src\semantic\binding.rs:565:49
+    |
+565 |     fn bind_parenthesized_expression(&mut self, node: &SyntaxNode) -> BoundNode {
+    |                                                 ^^^^ help: if this is intentional, prefix it with an underscore: `_node`
+
+warning: unused variable: `symbol`
+   --> src\semantic\binding.rs:603:31
+    |
+603 |     fn get_symbol_type(&self, symbol: &Symbol) -> Option<Rc<TypeSymbol>> {
+    |                               ^^^^^^ help: if this is intentional, prefix it with an underscore: `_symbol`
+
+warning: unused variable: `node`
+   --> src\semantic\binding.rs:610:29
+    |
+610 |     fn get_type_name(&self, node: &SyntaxNode) -> String {
+    |                             ^^^^ help: if this is intentional, prefix it with an underscore: `_node`
+
+warning: unused variable: `node`
+   --> src\semantic\binding.rs:614:31
+    |
+614 |     fn get_method_name(&self, node: &SyntaxNode) -> String {
+    |                               ^^^^ help: if this is intentional, prefix it with an underscore: `_node`
+
+warning: unused variable: `node`
+   --> src\semantic\binding.rs:618:33
+    |
+618 |     fn get_variable_name(&self, node: &SyntaxNode) -> String {
+    |                                 ^^^^ help: if this is intentional, prefix it with an underscore: `_node`
+
+warning: unused variable: `node`
+   --> src\semantic\binding.rs:622:33
+    |
+622 |     fn get_variable_type(&self, node: &SyntaxNode) -> Option<Rc<TypeSymbol>> {
+    |                                 ^^^^ help: if this is intentional, prefix it with an underscore: `_node`
+
+warning: unused variable: `node`
+   --> src\semantic\binding.rs:626:35
+    |
+626 |     fn get_identifier_text(&self, node: &SyntaxNode) -> String {
+    |                                   ^^^^ help: if this is intentional, prefix it with an underscore: `_node`
+
+warning: unused variable: `node`
+   --> src\semantic\binding.rs:630:32
+    |
+630 |     fn find_method_body(&self, node: &SyntaxNode) -> Option<&SyntaxNode> {
+    |                                ^^^^ help: if this is intentional, prefix it with an underscore: `_node`
+
+warning: value assigned to `successors` is never read
+   --> src\semantic\flow_analysis.rs:203:21
+    |
+203 |             let mut successors = Vec::new();
+    |                     ^^^^^^^^^^
+    |
+    = help: maybe it is overwritten before being read?
+    = note: `#[warn(unused_assignments)]` on by default
+
+warning: value assigned to `successors` is never read
+   --> src\semantic\flow_analysis.rs:284:21
+    |
+284 |             let mut successors = Vec::new();
+    |                     ^^^^^^^^^^
+    |
+    = help: maybe it is overwritten before being read?
+
+warning: unused variable: `block_id`
+   --> src\semantic\flow_analysis.rs:402:42
+    |
+402 |     fn get_predecessor_null_state(&self, block_id: usize) -> NullStateMap {
+    |                                          ^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_block_id`
+
+warning: unused variable: `node`
+   --> src\semantic\type_checker.rs:215:29
+    |
+215 |     fn get_base_type(&self, node: &SyntaxNode) -> Option<Rc<TypeSymbol>> {
+    |                             ^^^^ help: if this is intentional, prefix it with an underscore: `_node`
+
+warning: unused variable: `node`
+   --> src\semantic\type_checker.rs:221:30
+    |
+221 |     fn get_interfaces(&self, node: &SyntaxNode) -> Vec<Rc<TypeSymbol>> {
+    |                              ^^^^ help: if this is intentional, prefix it with an underscore: `_node`
+
+warning: unused variable: `node`
+   --> src\semantic\type_checker.rs:255:33
+    |
+255 |     fn process_field(&mut self, node: &SyntaxNode) -> Result<(), String> {
+    |                                 ^^^^ help: if this is intentional, prefix it with an underscore: `_node`
+
+warning: unused variable: `node`
+   --> src\semantic\type_checker.rs:261:36
+    |
+261 |     fn process_property(&mut self, node: &SyntaxNode) -> Result<(), String> {
+    |                                    ^^^^ help: if this is intentional, prefix it with an underscore: `_node`
+
+warning: unused variable: `node`
+   --> src\semantic\type_checker.rs:267:34
+    |
+267 |     fn process_method(&mut self, node: &SyntaxNode) -> Result<(), String> {
+    |                                  ^^^^ help: if this is intentional, prefix it with an underscore: `_node`
+
+warning: unused variable: `node`
+   --> src\semantic\type_checker.rs:273:39
+    |
+273 |     fn process_constructor(&mut self, node: &SyntaxNode) -> Result<(), String> {
+    |                                       ^^^^ help: if this is intentional, prefix it with an underscore: `_node`
+
+warning: unused variable: `node`
+   --> src\semantic\type_checker.rs:279:39
+    |
+279 |     fn check_method_bodies(&mut self, node: &SyntaxNode) -> Result<(), String> {
+    |                                       ^^^^ help: if this is intentional, prefix it with an underscore: `_node`
+
+warning: unused variable: `target`
+   --> src\semantic\type_checker.rs:442:9
+    |
+442 |         target: &BoundNode,
+    |         ^^^^^^ help: if this is intentional, prefix it with an underscore: `_target`
+
+warning: unused variable: `arguments`
+   --> src\semantic\type_checker.rs:443:9
+    |
+443 |         arguments: &[BoundNode],
+    |         ^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_arguments`
+
+warning: unused variable: `generic_type`
+   --> src\semantic\generics.rs:171:34
+    |
+171 |     fn get_type_parameter(&self, generic_type: &TypeSymbol, param_name: &str) -> Option<TypeParameter> {
+    |                                  ^^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_generic_type`
+
+warning: unused variable: `base_ref`
+   --> src\semantic\generics.rs:434:36
+    |
+434 |             TypeReference::Generic(base_ref, arg_refs) => {
+    |                                    ^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_base_ref`
+
+warning: unused variable: `arg_refs`
+   --> src\semantic\generics.rs:434:46
+    |
+434 |             TypeReference::Generic(base_ref, arg_refs) => {
+    |                                              ^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_arg_refs`
+
+warning: unused variable: `element_ref`
+   --> src\semantic\generics.rs:440:34
+    |
+440 |             TypeReference::Array(element_ref) => {
+    |                                  ^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_element_ref`
+
+warning: unused variable: `node`
+  --> src\semantic\mod.rs:91:30
+   |
+91 |     pub fn get_symbol(&self, node: &SyntaxNode) -> Option<&Symbol> {
+   |                              ^^^^ help: if this is intentional, prefix it with an underscore: `_node`
+
+warning: unused variable: `node`
+  --> src\semantic\mod.rs:98:33
+   |
+98 |     pub fn get_type_info(&self, node: &SyntaxNode) -> Option<&TypeSymbol> {
+   |                                 ^^^^ help: if this is intentional, prefix it with an underscore: `_node`
+
+warning: variable does not need to be mutable
+   --> src\semantic\mod.rs:115:13
+    |
+115 |         let mut resolver = TypeResolver::new(&mut self.symbol_table, type_cache, &mut self.diagnostics);
+    |             ----^^^^^^^^
+    |             |
+    |             help: remove this `mut`
+    |
+    = note: `#[warn(unused_mut)]` on by default
+
+warning: unused variable: `node`
+   --> src\semantic\mod.rs:397:28
+    |
+397 |     fn extract_name(&self, node: &SyntaxNode) -> String {
+    |                            ^^^^ help: if this is intentional, prefix it with an underscore: `_node`
+
+warning: unused variable: `path`
+  --> src\workspace\mod.rs:39:27
+   |
+39 |     pub fn load_from_file(path: PathBuf) -> Result<Self, std::io::Error> {
+   |                           ^^^^ help: if this is intentional, prefix it with an underscore: `_path`
+
+warning: unused variable: `path`
+  --> src\workspace\mod.rs:56:27
+   |
+56 |     pub fn load_from_file(path: PathBuf) -> Result<Self, std::io::Error> {
+   |                           ^^^^ help: if this is intentional, prefix it with an underscore: `_path`
+
+warning: unused variable: `assembly`
+   --> src\codegen\metadata.rs:348:25
+    |
+348 |     pub fn build(&self, assembly: &ILAssembly) -> Result<Vec<u8>, String> {
+    |                         ^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_assembly`
+
+warning: unused variable: `type_idx`
+   --> src\codegen\metadata.rs:431:49
+    |
+431 |     fn add_il_type(&mut self, il_type: &ILType, type_idx: u32) -> Result<u32, String> {
+    |                                                 ^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_type_idx`
+
+warning: unused variable: `type_idx`
+   --> src\codegen\metadata.rs:474:52
+    |
+474 |     fn add_il_method(&mut self, method: &ILMethod, type_idx: u32) -> Result<u32, String> {
+    |                                                    ^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_type_idx`
+
+warning: unused variable: `entry_point`
+   --> src\codegen\pe.rs:470:13
+    |
+470 |         let entry_point = self.assembly.entry_point.as_ref()
+    |             ^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_entry_point`
+
+Some errors have detailed explanations: E0026, E0027, E0308, E0369, E0560, E0599, E0609.
+For more information about an error, try `rustc --explain E0026`.
+warning: `csharp_compiler` (lib) generated 135 warnings
+error: could not compile `csharp_compiler` (lib) due to 60 previous errors; 135 warnings emitted
