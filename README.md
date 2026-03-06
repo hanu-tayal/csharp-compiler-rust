@@ -131,7 +131,7 @@ public class Example
 ### Build Steps
 ```bash
 # Clone the repository
-git clone https://github.com/<YOUR_USERNAME>/rust-csharp-compiler
+git clone https://github.com/hanu-tayal/rust-csharp-compiler
 cd rust-csharp-compiler
 
 # Build in release mode
